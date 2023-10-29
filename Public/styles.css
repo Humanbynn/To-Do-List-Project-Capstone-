@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+}
+
+
+input[type="text"] {
+    width: 50%;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333333;
+    color: #fff;
+    border: none;
+  
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+ input[type="checkbox"]:checked + label  {
+    text-decoration: line-through;
+}
+
+.nav-pills .nav-item .nav-link.active {
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 10px;
+    }
+}
+
