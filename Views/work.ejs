@@ -1,0 +1,25 @@
+<%- include('partials/header.ejs') %>
+
+<div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+    <% for (var i = 0; i < workTasks.length; i++) { %>
+    <div class="list-group">
+        <ul>
+        <input class="form-check-input flex-shrink-0"  type="checkbox" value="" style="font-size: 1.375em;">
+      <label >
+          <strong><%= workTasks[i].task %></strong>
+      </label>
+    </ul>
+      <% } %>
+      <form action="/addW" method="POST">
+        <input type="text" id="task" name="task" placeholder="Add a new task">
+        <button type="submit">Add Task</button>
+    </form>
+    </div>
+    
+  </div>
+  <%- include('partials/footer.ejs') %>       
+ 
+ 
+
+
+
